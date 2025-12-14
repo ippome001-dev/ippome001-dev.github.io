@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デジタルクッキーファクトリー | あなたのイラストを世界一可愛いデジタルクッキーに</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         SECTION 1: STICKY HEADER NAVIGATION
+         ============================================ -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">🍪 クッキーファクトリー</div>
+            <div class="nav-buttons">
+                <a href="#profile-section" class="nav-btn nav-btn-profile" onclick="smoothScroll(event, '#profile-section')">プロフィール</a>
+                <a href="#commission-section" class="nav-btn nav-btn-primary" onclick="smoothScroll(event, '#commission-section')">クッキー依頼</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         SECTION 2: HERO SECTION
+         ============================================ -->
+    <section class="hero">
+        <div class="hero-image-container">
+            <img src="images/hero-banner.png" alt="Cookie Art Sample" class="hero-image">
+            <div class="hero-overlay">
+                <h1 class="hero-title">焼きたてクッキーの魔法！</h1>
+                <p class="hero-subtitle">あなたのイラストを世界一可愛い<br>デジタルクッキーに。</p>
+            </div>
+        </div>
+        <div class="hero-description">
+            <p>あなたの大切なイラストやキャラクターを、まるで本物のクッキーのような温かみのあるデジタルアート作品に変身させます。<br>プロの職人による加工で、思い出の一枚がより輝く作品に生まれ変わります。</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: SERVICE PLAN SECTION
+         ============================================ -->
+    <section class="service-plans" id="commission-section">
+        <h2 class="section-heading">サービスプラン</h2>
+        <p class="section-subtitle">あなたのニーズに合わせて選べる2つのプラン</p>
+        
+        <div class="plans-container">
+            <!-- Plan 1 -->
+            <div class="plan-card plan-1">
+                <div class="plan-image-wrapper">
+                    <img src="images/plan-1-sample.png" alt="Plan 1 Sample" class="plan-image">
+                </div>
+                <h3 class="plan-title">データ持込<br>クッキー化プラン</h3>
+                <div class="plan-price">
+                    <span class="price-label">お試し価格</span>
+                    <span class="price-amount">¥500</span>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ あなたのイラスト変換</li>
+                    <li>✓ クッキー加工済み</li>
+                    <li>✓ PNG/JPG形式</li>
+                </ul>
+            </div>
+
+            <!-- Plan 2 -->
+            <div class="plan-card plan-2">
+                <div class="plan-image-wrapper">
+                    <img src="images/plan-2-sample.png" alt="Plan 2 Sample" class="plan-image">
+                </div>
+                <h3 class="plan-title">おまかせデザイン<br>クッキー化プラン</h3>
+                <div class="plan-price">
+                    <span class="price-label">カスタム価格</span>
+                    <span class="price-amount">¥~</span>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ デザイン相談対応</li>
+                    <li>✓ クッキー加工済み</li>
+                    <li>✓ PNG/JPG形式</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: MAIN CALL-TO-ACTION
+         ============================================ -->
+    <section class="cta-section">
+        <h2 class="cta-title">ご依頼はこちらから</h2>
+        <p class="cta-description">Googleフォームから簡単にご依頼いただけます。</p>
+        <a href="#google-form-link" class="cta-button">🛒 ご依頼はこちらから (Googleフォームへ)</a>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: SAMPLE GALLERY (Before/After)
+         ============================================ -->
+    <section class="gallery-section">
+        <h2 class="section-heading">作品事例はこちらから</h2>
+        <p class="section-subtitle">Before & Afterで確認できる加工例</p>
+
+        <div class="gallery-container">
+            <!-- Sample 1 -->
+            <div class="gallery-item">
+                <div class="before-after-wrapper">
+                    <div class="before-image-box">
+                        <img src="images/cookie-sample-before-1.png" alt="Before Sample 1" class="gallery-image">
+                        <p class="image-label">元のイラスト</p>
+                    </div>
+                    <div class="after-image-box">
+                        <img src="images/cookie-sample-after-1.png" alt="After Sample 1" class="gallery-image">
+                        <p class="image-label">クッキー化後</p>
+                    </div>
+                </div>
+                <p class="format-info">📥 PNG / JPG 形式で納品</p>
+            </div>
+
+            <!-- Sample 2 -->
+            <div class="gallery-item">
+                <div class="before-after-wrapper">
+                    <div class="before-image-box">
+                        <img src="images/cookie-sample-before-2.png" alt="Before Sample 2" class="gallery-image">
+                        <p class="image-label">元のイラスト</p>
+                    </div>
+                    <div class="after-image-box">
+                        <img src="images/cookie-sample-after-2.png" alt="After Sample 2" class="gallery-image">
+                        <p class="image-label">クッキー化後</p>
+                    </div>
+                </div>
+                <p class="format-info">📥 PNG / JPG 形式で納品</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 6: NOTES & PORTFOLIO (Bottom Section)
+         ============================================ -->
+    <section class="notes-portfolio-section" id="profile-section">
+        <!-- Notes Section -->
+        <div class="notes-container">
+            <h2 class="section-heading">注意事項</h2>
+            <div class="notes-content">
+                <div class="note-item">
+                    <span class="note-icon">⚖️</span>
+                    <div>
+                        <strong>著作権について</strong>
+                        <p>提供いただいたイラストの著作権は、お客様に帰属します。当工房は、サービス提供のためのみにイラストを利用させていただきます。</p>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <span class="note-icon">🔒</span>
+                    <div>
+                        <strong>修正不可・リテイク対応なし</strong>
+                        <p>納品後の修正・変更やリテイクはお受けしておりません。ご発注前にサービス内容を十分にご確認ください。</p>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <span class="note-icon">💳</span>
+                    <div>
+                        <strong>決済方法について</strong>
+                        <p>本サービスでは、Googleフォーム経由でのご依頼と、アズカリ決済により対応させていただきます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="portfolio-container">
+            <h2 class="section-heading">作品一覧</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/portfolio-1.png" alt="Portfolio 1" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-2.png" alt="Portfolio 2" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-3.png" alt="Portfolio 3" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-4.png" alt="Portfolio 4" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-5.png" alt="Portfolio 5" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-6.png" alt="Portfolio 6" class="portfolio-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <p>&copy; 2025 デジタルクッキーファクトリー All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
